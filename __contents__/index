@@ -2,6 +2,55 @@
 
 Welcome to General Assembly.
 
+## About Me
+
+<style>
+.profile {
+    width: 450px;
+    padding: 8px 8px;
+    background: #fff;
+    border-radius: 5px;
+    border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 3px;
+}
+/* an element in the block */
+.profile__image {
+    width: 100px;
+    height: 100px;    
+}
+/* a modifier of an element within the block... */
+.profile__image--rounded {
+    border-radius: 5px;
+    border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
+}
+
+/* paragraph typography; a modifier of the block itself */
+.profile--typ_p {
+    font-family: Helvetica, serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* another modifier of the block */
+.profile--float_l {
+    float: left;   
+}
+
+/* modifier */
+.profile__desc {
+    display: block;
+    width: 310px;    
+    margin-top: 20px;
+    margin-left: 20px;
+}
+</style>
+<div class="profile cf">
+    <img style="width: 100px; height: 100px; float: left;"
+        src="https://pbs.twimg.com/profile_images/537060432402718721/SW0m0JTl.jpeg"
+        class="profile__image profile__image--rounded profile--float_l">
+    <span style="vertical-align: middle; display: inline-black;" class="profile__desc profile--typ_p profile--float_l">Taqqui Karim is a software engineer by day, FEWD instructor by weekend, and hacker of all things awesome by night.</span>
+</div>
+
 ## Game Plan for today
 
 In this class, we will cover the basics of working with NodeJS. 
