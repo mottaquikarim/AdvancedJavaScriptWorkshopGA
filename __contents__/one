@@ -1,0 +1,42 @@
+## Workshop Day One
+
+### Setting up the environment
+1. Download iTerm2 (if you prefer terminal, that's ok too)
+2. Install nodejs (everyone should have this done already)
+
+### Getting Started
+
+1. console.log( "hello, world!" );
+2. How dependency imports work in node
+3. Node Package Manager, or npm
+4. package.json
+
+### File I/O
+
+1. __exercise__: read file
+2. __exercise__: exercise: write file
+
+### Working with NodeJS
+
+1. how to handle asynchronous function handling
+    * callbacks
+    * promises
+    * the [deferred factory](https://gist.github.com/mottaquikarim/cc57b8d2db6cf6f75b6c)
+
+### Building something simple
+
+1. __exercise__: generate a simple html page structure
+2. refactoring our structure to make it reusable
+
+### Command line scripts
+
+1. how to make it a command line runnable script with [commander](https://www.npmjs.com/package/commander)
+    * (or, [yargs](http://davidwalsh.name/nodejs-arguments-yargs?utm_source=nodeweekly&utm_medium=email)
+2. __exercise__: now do it yourself for our html page structure - turn it into cmd line script
+static site generator start
+
+### Static Site Generator
+1. let's use our script code to create a new type of program, one that takes input, transforms it, then spits it out somewhere else 
+2. then, we will take the output, read through it, and generate a nav in HTML. [cheerio](https://www.npmjs.com/package/cheerio) could be useful here.
+3. Let's create our header.partial and footer.partial
+4. Final piece: let's "assemble" each HTML page required to make our static site generator work
