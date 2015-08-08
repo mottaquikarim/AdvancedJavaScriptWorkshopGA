@@ -1,0 +1,18 @@
+# Hello, Wrold!
+
+Welcome to General Assembly.
+
+## Game Plan for today
+
+In this class, we will cover the basics of working with NodeJS. 
+
+### Day 1
+We will dabble in FileI/O in Node, how to write command line scripts, and how to use NodeJS to generate scaffolding for new websites.
+Finally, we will begin the process of creating our very own simple static site generator.
+
+### Day 2
+We will create simple HTTP servers in node JS and move on to using express to generate websites. 
+Mainly, we will stick to creating API driven NodeJS backends powered by express.
+Additionally, we will learn how we can use Node's CommoJS module loading pattern on the frontend and how to interface with the API we built with expressjs.
+
+### #letsDoThisYo
