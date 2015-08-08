@@ -44,11 +44,11 @@ Welcome to General Assembly.
     margin-left: 20px;
 }
 </style>
-<div class="profile cf" style="height: 100px; margin: 0 auto;">
+<div class="profile cf" style="height: 100px;">
     <img style="width: 100px; height: 100px; float: left;"
         src="https://pbs.twimg.com/profile_images/537060432402718721/SW0m0JTl.jpeg"
         class="profile__image profile__image--rounded profile--float_l">
-    <span style="vertical-align: middle; display: inline-black;" class="profile__desc profile--typ_p profile--float_l">Taqqui Karim is a software engineer by day, FEWD instructor by weekend, and hacker of all things awesome by night.</span>
+    <span style="vertical-align: middle; display: inline-black;" class="profile__desc profile--typ_p profile--float_l">Taqqui Karim is a <a href="https://twitter.com/sharehoney" target="_blank">software engineer</a> by day, <a href="https://generalassemb.ly/instructors/taqqui-karim/1667" target="_blank">FEWD instructor</a> by weekend, and <a href="http://fewd.us/" target="_blank">hacker of all things awesome</a> by night.</span>
 </div>
 <br>
 
