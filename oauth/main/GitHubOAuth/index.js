@@ -25,6 +25,8 @@ module.exports = function() {
 
 	// define app routes
 	app.get( '/authenticate', Routes.authenticate );
+	app.get( '/redirect', Routes.redirect );
 
+	// expose instance of our app to real world
 	return app;
 } // export an app
