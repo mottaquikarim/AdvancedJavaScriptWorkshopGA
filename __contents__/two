@@ -1,7 +1,5 @@
 ## Day two: OAuth and you
 
-First, please pull down class notes from [yesterday](https://github.com/mottaquikarim/AdvancedJavaScriptWorkshopGA).
-
 ### Why Q.all did not work yesterday
 
 We did not have a:
@@ -9,4 +7,20 @@ We did not have a:
 `var Q = require('q')` 
 
 anywhere in our index.js file, so it was failing to find the Q object at all
+
+### Getting Started
+
+First, please pull down class notes from [yesterday](https://github.com/mottaquikarim/AdvancedJavaScriptWorkshopGA).
+
+You will find a folder called __oauth__, that is where we will start our work today.
+
+### Creating a GitHub App
+
+Please go [here](https://github.com/settings/developers) and create a new application
+Then, go [here](https://github.com/settings/tokens) and create a new personal token
+
+### Wiring up routes to handle OAuth
+
+1. What is OAuth anyways?
+2. Look [here](https://developer.github.com/v3/oauth/) to get a sense of how we have to implement OAuth for GitHub
 
