@@ -312,8 +312,48 @@ body .value-props {
 
     <li class="navbar-item"><a class="navbar-link" href="index.html">index</a></li><li class="navbar-item"><a class="navbar-link" href="one.html">one</a></li><li class="navbar-item"><a class="navbar-link" href="two.html">two</a></li></ul>
   </div>
-</nav><div class="docs-section" style="padding-left: 10%;"><h2 id="to-be-revealted-tomorrow-">To be revealted tomorrow !</h2>
-<h3 id="-staytunedyo">#stayTunedYo</h3>
+</nav><div class="docs-section" style="padding-left: 10%;"><h2 id="day-two-oauth-and-you">Day two: OAuth and you</h2>
+<h3 id="why-q-all-did-not-work-yesterday">Why Q.all did not work yesterday</h3>
+<p>We did not have a:</p>
+<p><code>var Q = require(&#39;q&#39;)</code> </p>
+<p>anywhere in our index.js file, so it was failing to find the Q object at all</p>
+<h3 id="getting-started">Getting Started</h3>
+<p>First, please pull down class notes from <a href="https://github.com/mottaquikarim/AdvancedJavaScriptWorkshopGA">yesterday</a>.</p>
+<p>You will find a folder called <strong>oauth</strong>, that is where we will start our work today.</p>
+<h3 id="creating-a-github-app">Creating a GitHub App</h3>
+<p>Please go <a href="https://github.com/settings/developers">here</a> and create a new application
+Then, go <a href="https://github.com/settings/tokens">here</a> and create a new personal token</p>
+<h3 id="wiring-up-routes-to-handle-oauth">Wiring up routes to handle OAuth</h3>
+<ol>
+<li>What is OAuth anyways?</li>
+<li>Look <a href="https://developer.github.com/v3/oauth/">here</a> to get a sense of how we have to implement OAuth for GitHub</li>
+<li>We cannot implement this on the frontend, hence we have to build this with NodeJS</li>
+</ol>
+<h3 id="expressjs-and-you">ExpressJS and you</h3>
+<ol>
+<li>What is Express</li>
+<li>How to set up express</li>
+<li>Composing an express app made of other express apps</li>
+</ol>
+<h3 id="implementing-github-oauth-through-express">Implementing GitHub OAuth through Express</h3>
+<ol>
+<li>set up authorization route</li>
+<li>handle the callback route</li>
+<li>store the accesstoken in session</li>
+</ol>
+<h3 id="making-calls-to-github-api">Making calls to GitHub API</h3>
+<ol>
+<li>create anther express app to be used by main</li>
+<li>this app will handle all github api routes</li>
+<li>we will only implement the ones we need</li>
+<li>this keeps our code simple and concise </li>
+</ol>
+<h3 id="building-out-a-simple-commenting-system-with-github-api">Building out a simple commenting system with GitHub API</h3>
+<ol>
+<li>For each entry in our static site generator, we should have a corresponding .json file in a statik-comments repo</li>
+<li>the json file should be readable and writeable on the frontend</li>
+<li>everytime we regenerate static site, we should optionally be able to also string together the comments into the post for faster load times</li>
+</ol>
 </div>            <div class="footer navbar" style="height: auto;">
                 <div class="navbar-list">
                     <small>
