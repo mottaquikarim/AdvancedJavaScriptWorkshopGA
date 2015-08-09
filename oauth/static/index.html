@@ -5,5 +5,16 @@
 	</head>
 	<body>
 		<h1>Hello, Wrold from Static!</h1>
+		<img src="" id="img">
+		<div><span id="desc"></span></div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+		$.get('/me', function(data){
+			data = JSON.parse(data);
+			$('#img').attr('src', data.avatar_url );
+			$('#desc').text(data.company)
+		})
+		</script>
 	</body>
 <html>

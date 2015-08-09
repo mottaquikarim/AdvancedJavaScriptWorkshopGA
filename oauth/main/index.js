@@ -13,6 +13,9 @@ app.use( staticapp( STATIC_PATH, STATIC_ROUTE ) );
 var githuboauthapp = require('./GitHubOAuth');
 app.use( githuboauthapp( STATIC_ROUTE ) );
 
+var githubapiapp = require('./GitHubAPI');
+app.use( githubapiapp() );
+
 http.createServer( app )
 .listen( 
 	app.get('port'),
