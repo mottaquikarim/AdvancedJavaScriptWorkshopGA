@@ -1,9 +1,16 @@
-module.exports = function() {
+module.exports = function( redirectTo ) {
 	var express 	= require('express'),
 		session 	= require('express-session'),
     	bodyParser 	= require('body-parser'),
 		app 		= express(),
 		Routes 		= require('./GitHubOAuthHelper');
+
+	if ( redirectTo === "undefined" ) {
+		Routes.REDIRECT_TO = '/';
+	}
+	else {
+		Routes.REDIRECT_TO = redirectTo;
+	}
 
 	// session config
 	app.use(session({
@@ -24,9 +31,12 @@ module.exports = function() {
 	}));
 
 	// define app routes
+	app.get('/', Routes.root )
 	app.get( '/authenticate', Routes.authenticate );
 	app.get( '/redirect', Routes.redirect );
+	app.get( '/isloggedin', Routes.isloggedin );
 
 	// expose instance of our app to real world
 	return app;
 } // export an app
+

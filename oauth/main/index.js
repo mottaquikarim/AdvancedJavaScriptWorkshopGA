@@ -1,15 +1,17 @@
-var express 	= require('express'),
-	http 		= require('http'),
-	app 		= express(),
-	APP_PORT 	= 3000;
+var express 		= require('express'),
+	http 			= require('http'),
+	app 			= express(),
+	APP_PORT 		= 3000,
+	STATIC_PATH 	= 'static',
+	STATIC_ROUTE	= '/app';
 
 app.set('port', APP_PORT);
 
 var staticapp = require('./static');
-app.use( staticapp() );
+app.use( staticapp( STATIC_PATH, STATIC_ROUTE ) );
 
 var githuboauthapp = require('./GitHubOAuth');
-app.use( githuboauthapp() );
+app.use( githuboauthapp( STATIC_ROUTE ) );
 
 http.createServer( app )
 .listen( 

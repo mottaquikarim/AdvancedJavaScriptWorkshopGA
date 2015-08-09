@@ -3,5 +3,5 @@ module.exports = {
 	clientSecret: '57caefed11e9964700287d5e246364a41e84fd23',
 	scope: 'public_repo,user',
 	AUTHORIZE: 'https://github.com/login/oauth/authorize',
-	ACCESS_TOKEN: 'https://github.com/login/oauth/access_token'
+	ACCESS_TOKEN_URL: 'https://github.com/login/oauth/access_token'
 };
