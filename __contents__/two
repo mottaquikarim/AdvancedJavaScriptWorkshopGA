@@ -23,4 +23,31 @@ Then, go [here](https://github.com/settings/tokens) and create a new personal to
 
 1. What is OAuth anyways?
 2. Look [here](https://developer.github.com/v3/oauth/) to get a sense of how we have to implement OAuth for GitHub
+3. We cannot implement this on the frontend, hence we have to build this with NodeJS
 
+
+### ExpressJS and you
+
+1. What is Express
+2. How to set up express
+3. Composing an express app made of other express apps
+
+### Implementing GitHub OAuth through Express
+
+1. set up authorization route
+2. handle the callback route
+3. store the accesstoken in session
+
+
+### Making calls to GitHub API
+
+1. create anther express app to be used by main
+2. this app will handle all github api routes
+3. we will only implement the ones we need
+4. this keeps our code simple and concise 
+
+### Building out a simple commenting system with GitHub API
+
+1. For each entry in our static site generator, we should have a corresponding .json file in a statik-comments repo
+2. the json file should be readable and writeable on the frontend
+3. everytime we regenerate static site, we should optionally be able to also string together the comments into the post for faster load times
