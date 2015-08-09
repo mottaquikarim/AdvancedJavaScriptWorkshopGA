@@ -1,0 +1,16 @@
+{
+  "name": "statik",
+  "version": "1.0.0",
+  "description": "A simple static site generator that converts markdown to html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mottaqui Karim",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^0.10.1",
+    "marked": "^0.3.5",
+    "q": "^1.4.1"
+  }
+}
