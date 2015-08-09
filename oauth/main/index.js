@@ -5,11 +5,16 @@ var express 	= require('express'),
 
 app.set('port', APP_PORT);
 
+var staticapp = require('./static');
+app.use( staticapp() );
 
-app.get('/foo', function( request, reply) {
-	reply.send("Hello, Wrold!");
-});
+var githuboauthapp = require('./GitHubOAuth');
+app.use( githuboauthapp() );
 
-http.createServer( app ).listen( app.get('port'), function() {
-	console.log('Server started! Listening on: ' + app.get('port') );
-});
+http.createServer( app )
+.listen( 
+	app.get('port'),
+	function() {
+		console.log('Server started! Listening on: ' + app.get('port') );
+	}
+);
