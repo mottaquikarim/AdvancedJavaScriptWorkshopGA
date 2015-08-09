@@ -1,3 +1,12 @@
-## To be revealted tomorrow !
+## Day two: OAuth and you
 
-### #stayTunedYo
+First, please pull down class notes from [yesterday](https://github.com/mottaquikarim/AdvancedJavaScriptWorkshopGA).
+
+### Why Q.all did not work yesterday
+
+We did not have a:
+
+`var Q = require('q')` 
+
+anywhere in our index.js file, so it was failing to find the Q object at all
+
